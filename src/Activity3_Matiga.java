@@ -23,32 +23,44 @@ public class Activity3_Matiga {
         int sodaPrice = 0;
         int iceCreamPrice = 0;
 
+        // Display the Menu for the user.
         System.out.println("=== Snack Menu ===");
         SnackMenu();
 
-        System.out.println("\nWhat would you like to order? ");
-        System.out.print("Choose between item's 1-4: ");
+        // Scanner - use to ask the user what the order is.
+        System.out.print("\nWhat would you like to order? ");
         String choice = sc.nextLine();
 
-        switch (choice) {
-            case "1":
+        // Conditional Statement - used Switch Statement to print the output.
+        switch (choice.toLowerCase()) {
+            case "burger":
                 burgerPrice = 50;
+                System.out.println("\n=== Snack Receipt ====");
+                System.out.println("You have chosen: " + choice);
+                System.out.printf("Price: ₱%d%n", burgerPrice);  // print here
                 break;
-            case "2":
+            case "fries":
                 friesPrice = 40;
+                System.out.println("\n=== Snack Receipt ====");
+                System.out.println("You have chosen: " + choice);
+                System.out.printf("Price: ₱%d%n", friesPrice);   // print here
                 break;
-            case "3":
+            case "soda":
                 sodaPrice = 20;
+                System.out.println("\n=== Snack Receipt ====");
+                System.out.println("You have chosen: " + choice);
+                System.out.printf("Price: ₱%d%n", sodaPrice);    // print here
                 break;
-            case "4":
+            case "ice cream":
                 iceCreamPrice = 35;
+                System.out.println("\n=== Snack Receipt ====");
+                System.out.println("You have chosen: " + choice);
+                System.out.printf("Price: ₱%d%n", iceCreamPrice); // print here
                 break;
             default:
                 System.out.println("Invalid choice.");
                 break;
         }
-
-        System.out.println("Hello World");
     }
 
     // Snack Menu Method - Reusable Data for printing the Snack Menu.
