@@ -18,10 +18,7 @@ public class Activity3_Matiga {
         Scanner sc = new Scanner(System.in);
 
         // Declaration of Variables - Item/Snack Prices
-        int burgerPrice = 0;
-        int friesPrice = 0;
-        int sodaPrice = 0;
-        int iceCreamPrice = 0;
+        int snackPrice = 0;
 
         // Display the Menu for the user.
         System.out.println("=== Snack Menu ===");
@@ -34,28 +31,28 @@ public class Activity3_Matiga {
         // Conditional Statement - used Switch Statement to print the output.
         switch (choice.toLowerCase()) {
             case "burger":
-                burgerPrice = 50;
+                snackPrice = 50;
                 System.out.println("\n=== Snack Receipt ====");
                 System.out.println("You have chosen: " + choice);
-                System.out.printf("Price: ₱%d%n", burgerPrice);  // print here
+                System.out.printf("Price: ₱%d%n", snackPrice);
                 break;
             case "fries":
-                friesPrice = 40;
+                snackPrice = 40;
                 System.out.println("\n=== Snack Receipt ====");
                 System.out.println("You have chosen: " + choice);
-                System.out.printf("Price: ₱%d%n", friesPrice);   // print here
+                System.out.printf("Price: ₱%d%n", snackPrice);
                 break;
             case "soda":
-                sodaPrice = 20;
+                snackPrice = 20;
                 System.out.println("\n=== Snack Receipt ====");
                 System.out.println("You have chosen: " + choice);
-                System.out.printf("Price: ₱%d%n", sodaPrice);    // print here
+                System.out.printf("Price: ₱%d%n", snackPrice);
                 break;
             case "ice cream":
-                iceCreamPrice = 35;
+                snackPrice = 35;
                 System.out.println("\n=== Snack Receipt ====");
                 System.out.println("You have chosen: " + choice);
-                System.out.printf("Price: ₱%d%n", iceCreamPrice); // print here
+                System.out.printf("Price: ₱%d%n", snackPrice);
                 break;
             default:
                 System.out.println("Invalid choice.");
